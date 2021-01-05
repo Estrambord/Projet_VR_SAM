@@ -109,15 +109,15 @@ public class PartyManager : MonoBehaviour
             SlotPlayer1 = myPlayer;
             player1CheckBox.isOn = true;
         }
-        if (SlotPlayer2 == null)
+        else if (SlotPlayer2 == null)
         {
             SlotPlayer2 = myPlayer;
             player2CheckBox.isOn = true;
         }
-        if (SlotPlayer3 == null)
+        else if (SlotPlayer3 == null)
         {
             SlotPlayer3 = myPlayer;
-            player2CheckBox.isOn = true;
+            player3CheckBox.isOn = true;
         }
     }
 }
