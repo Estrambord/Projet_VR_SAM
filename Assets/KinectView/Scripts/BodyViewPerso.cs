@@ -7,6 +7,7 @@ using Joint = Windows.Kinect.Joint;
 
 public class BodyViewPerso : MonoBehaviour
 {
+    public PartyManager myManager;
     public BodySourceManager sourceManager;
     public GameObject cube;
     public GameObject cubeMainGauche;
@@ -67,6 +68,7 @@ public class BodyViewPerso : MonoBehaviour
     private GameObject CreateBody(ulong id)
     {
         GameObject body = new GameObject("Body : " + id );
+        myManager.AddPlayer(body);
         foreach (JointType joint in joints)
         {
             GameObject newJoint;
