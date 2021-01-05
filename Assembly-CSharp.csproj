@@ -66,6 +66,7 @@
     <Compile Include="Assets\KinectView\Scripts\BodySourceManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodySourceView.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodyViewPerso.cs" />
+    <Compile Include="Assets\QTE\QTE.cs" />
     <Compile Include="Assets\Script\PartyManager.cs" />
     <Compile Include="Assets\Script\Round.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
