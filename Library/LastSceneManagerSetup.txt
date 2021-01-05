@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/Antoine le BG.unity
+=======
 - path: Assets/Scenes/Hugo.unity
+>>>>>>> d120c12a007b58933e7b34e3993d83dd938d900e
   isLoaded: 1
   isActive: 1
   isSubScene: 0
