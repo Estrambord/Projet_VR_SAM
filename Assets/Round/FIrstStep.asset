@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 344ea667b9c3f664f8a04bec36df07f0, type: 3}
-  m_Name: Introduction
+  m_Name: FIrstStep
   m_EditorClassIdentifier: 
-  instructionText: Choose your role
+  instructionText: Press everybuttons
   instructionAudio: {fileID: 0}
   isGame: 0
   started: 0

@@ -1,30 +1,41 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{AC8F09BF-9990-416D-898A-F8AA618646E4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{6BD275D9-379D-CC30-B1D5-63B98043518F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{96A33425-F509-8B46-C0B4-51EC227CE52E}"
 EndProject
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{6BD275D9-379D-CC30-B1D5-63B98043518F}"
+EndProject
+>>>>>>> Stashed changes
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< Updated upstream
 		{AC8F09BF-9990-416D-898A-F8AA618646E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AC8F09BF-9990-416D-898A-F8AA618646E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC8F09BF-9990-416D-898A-F8AA618646E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC8F09BF-9990-416D-898A-F8AA618646E4}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> Stashed changes
 		{6BD275D9-379D-CC30-B1D5-63B98043518F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6BD275D9-379D-CC30-B1D5-63B98043518F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BD275D9-379D-CC30-B1D5-63B98043518F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BD275D9-379D-CC30-B1D5-63B98043518F}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
 		{96A33425-F509-8B46-C0B4-51EC227CE52E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{96A33425-F509-8B46-C0B4-51EC227CE52E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96A33425-F509-8B46-C0B4-51EC227CE52E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96A33425-F509-8B46-C0B4-51EC227CE52E}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
