@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344ea667b9c3f664f8a04bec36df07f0, type: 3}
   m_Name: Introduction
   m_EditorClassIdentifier: 
-  instructions: Choose your role ! Validate with the controller
+  instructionText: Choose your role
+  instructionAudio: {fileID: 0}
   isGame: 0
+  started: 0
   timer: 0
   firstMur: {fileID: 0}
   secondMur: {fileID: 0}
   thirdMur: {fileID: 0}
+  completed: 0
