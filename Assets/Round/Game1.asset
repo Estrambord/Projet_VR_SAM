@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 344ea667b9c3f664f8a04bec36df07f0, type: 3}
-  m_Name: Introduction
+  m_Name: Game1
   m_EditorClassIdentifier: 
-  instructionText: Choose your role
+  instructionText: Dogde incomming walls
   instructionAudio: {fileID: 0}
-  isGame: 0
+  isGame: 1
   started: 0
-  timer: 0
+  timer: 20
   firstMur: {fileID: 0}
   secondMur: {fileID: 0}
   thirdMur: {fileID: 0}
