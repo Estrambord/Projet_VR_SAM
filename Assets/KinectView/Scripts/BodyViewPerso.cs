@@ -81,10 +81,10 @@ public class BodyViewPerso : MonoBehaviour
             else
             {
                 newJoint = Instantiate(cube);
-                if (joint == JointType.SpineBase)
-                {
-                    newJoint.tag = "Player";
-                }
+            }
+            if (joint == JointType.SpineBase)
+            {
+                newJoint.tag = "Player";
             }
             newJoint.name = joint.ToString();
             newJoint.transform.parent = body.transform;
