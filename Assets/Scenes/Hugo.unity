@@ -487,7 +487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164315226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.873085, y: 0, z: 182.0674}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -850,9 +850,9 @@ MonoBehaviour:
   introduction: {fileID: 11400000, guid: 0193567ad1fe01d49a5f103a4b257644, type: 2}
   firstStep: {fileID: 11400000, guid: bd9e191ace1531c4396d02ec6fe3f47b, type: 2}
   Game1: {fileID: 11400000, guid: cf2c0d0c0cc23634aa0cf643ff1d0e8d, type: 2}
-  player1CheckBox: {fileID: 0}
-  player2CheckBox: {fileID: 0}
-  player3CheckBox: {fileID: 0}
+  player1CheckBox: {fileID: 117523991}
+  player2CheckBox: {fileID: 310315318}
+  player3CheckBox: {fileID: 1150320484}
   panel1: {fileID: 1458896620}
   panel2: {fileID: 84000815}
   panel3: {fileID: 195428412}
@@ -1725,6 +1725,8 @@ MonoBehaviour:
   cubeMainGauche: {fileID: 8014038467974729345, guid: 86f55e7c4e8297c479df60157b854380,
     type: 3}
   cubeMainDroite: {fileID: 5403924959011952472, guid: 8de87508b1a62e54f928208e899bc51c,
+    type: 3}
+  avatarPrefab: {fileID: 5128148061279309108, guid: 4378c3cbb10633a438f6b3de6dcf9fe4,
     type: 3}
 --- !u!4 &1686107136
 Transform:

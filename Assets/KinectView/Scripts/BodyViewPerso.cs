@@ -12,7 +12,9 @@ public class BodyViewPerso : MonoBehaviour
     public GameObject cube;
     public GameObject cubeMainGauche;
     public GameObject cubeMainDroite;
+    public GameObject avatarPrefab;
     private Dictionary<ulong, GameObject> bodies = new Dictionary<ulong, GameObject>();
+    private Dictionary<ulong, GameObject> avatars = new Dictionary<ulong, GameObject>();
     private List<JointType> joints = new List<JointType>
     {
         JointType.AnkleLeft, JointType.AnkleRight, JointType.ElbowLeft, JointType.ElbowRight, JointType.FootLeft, JointType.FootRight, JointType.HandLeft, JointType.HandRight, JointType.HandTipLeft,
@@ -46,9 +48,11 @@ public class BodyViewPerso : MonoBehaviour
                 if (!bodies.ContainsKey(body.TrackingId))
                 {
                     bodies[body.TrackingId] = CreateBody(body.TrackingId);
+                    Debug.Log("Created body");
+                    //avatars[body.TrackingId] = CreateAvatar(body.TrackingId);
+                    //avatars[body.TrackingId].transform.position = bodies[body.TrackingId].transform.position;
                 }
                 UpdateBody(body, bodies[body.TrackingId]);
-
             }
         }
 
@@ -93,6 +97,13 @@ public class BodyViewPerso : MonoBehaviour
         }
         return body;
     }
+
+    //private GameObject CreateAvatar(ulong id)
+    //{
+    //    GameObject avatar = Instantiate(avatarPrefab);
+    //    avatar.name = "Avatar : " + id;
+    //    return avatar;
+    //}
 
     private void UpdateBody(Body body, GameObject bodyObj)
     {
