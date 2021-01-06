@@ -21,9 +21,8 @@ public class PartyManager : MonoBehaviour
     public Toggle player2CheckBox;
     public Toggle player3CheckBox;
 
-    public GameObject panel1;
-    public GameObject panel2;
-    public GameObject panel3;
+    public GameObject panelChooseRole;
+    public GameObject panelChooseRoleValid;
 
     public GameObject SlotPlayer1;
     public GameObject SlotPlayer2;
@@ -68,17 +67,19 @@ public class PartyManager : MonoBehaviour
         if (!introductionInit)
         {
             PlayRound(introduction);
-            panel1.SetActive(true); panel2.SetActive(true); panel3.SetActive(true);
+            panelChooseRole.SetActive(true);
         }
 
         if(SlotPlayer1 && SlotPlayer2 && SlotPlayer3 && !roleLocked)
         {
+            panelChooseRoleValid.SetActive(true);
             roleLocked = true;
         }
 
         if (Input.GetKeyDown(KeyCode.B) && roleLocked)
         {
-            panel1.SetActive(false); panel2.SetActive(false); panel3.SetActive(false);
+            panelChooseRole.SetActive(false);
+            panelChooseRoleValid.SetActive(false);
             introduction.completed = true;
         }
     }
