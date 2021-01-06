@@ -345,6 +345,12 @@
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
+=======
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>/Users/luciebomel/WorkSpace/M2/COURS/ENSAM COURS/RV/Projet_VR_SAM/Assets/KinectScripts/SharpZipLib/ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+>>>>>>> main
     <Reference Include="OpenCvSharp">
       <HintPath>C:/Users/student/Desktop/Projet_VR_SAM/Assets/KinectScripts/OpenCV/OpenCvSharp.dll</HintPath>
     </Reference>
@@ -730,7 +736,11 @@
       <HintPath>C:/Users/student/Desktop/Projet_VR_SAM/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
+<<<<<<< HEAD
       <HintPath>C:/Users/student/Desktop/Projet_VR_SAM/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+=======
+      <HintPath>/Users/luciebomel/WorkSpace/M2/COURS/ENSAM COURS/RV/Projet_VR_SAM/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+>>>>>>> main
     </Reference>
   </ItemGroup>
   <ItemGroup>
