@@ -49,8 +49,8 @@ public class BodyViewPerso : MonoBehaviour
                 {
                     bodies[body.TrackingId] = CreateBody(body.TrackingId);
                     Debug.Log("Created body");
-                    //avatars[body.TrackingId] = CreateAvatar(body.TrackingId);
-                    //avatars[body.TrackingId].transform.position = bodies[body.TrackingId].transform.position;
+                    avatars[body.TrackingId] = CreateAvatar(body.TrackingId);
+                    avatars[body.TrackingId].transform.position = bodies[body.TrackingId].transform.position;
                 }
                 UpdateBody(body, bodies[body.TrackingId]);
             }
@@ -98,12 +98,12 @@ public class BodyViewPerso : MonoBehaviour
         return body;
     }
 
-    //private GameObject CreateAvatar(ulong id)
-    //{
-    //    GameObject avatar = Instantiate(avatarPrefab);
-    //    avatar.name = "Avatar : " + id;
-    //    return avatar;
-    //}
+    private GameObject CreateAvatar(ulong id)
+    {
+        GameObject avatar = Instantiate(avatarPrefab);
+        avatar.name = "Avatar : " + id;
+        return avatar;
+    }
 
     private void UpdateBody(Body body, GameObject bodyObj)
     {
