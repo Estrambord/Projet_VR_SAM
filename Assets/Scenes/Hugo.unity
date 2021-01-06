@@ -229,7 +229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -650, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &117523991
@@ -675,7 +675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -650, y: 50}
+  m_AnchoredPosition: {x: 0, y: 50}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &310315318
@@ -850,9 +850,9 @@ MonoBehaviour:
   introduction: {fileID: 11400000, guid: 0193567ad1fe01d49a5f103a4b257644, type: 2}
   firstStep: {fileID: 11400000, guid: bd9e191ace1531c4396d02ec6fe3f47b, type: 2}
   Game1: {fileID: 11400000, guid: cf2c0d0c0cc23634aa0cf643ff1d0e8d, type: 2}
-  player1CheckBox: {fileID: 117523991}
-  player2CheckBox: {fileID: 310315318}
-  player3CheckBox: {fileID: 1150320484}
+  player1CheckBox: {fileID: 0}
+  player2CheckBox: {fileID: 0}
+  player3CheckBox: {fileID: 0}
   panel1: {fileID: 1458896620}
   panel2: {fileID: 84000815}
   panel3: {fileID: 195428412}

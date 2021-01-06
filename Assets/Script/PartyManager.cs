@@ -48,7 +48,6 @@ public class PartyManager : MonoBehaviour
         if (introduction.completed && !firstStep.completed)
         {
             FirstStep();
-            Debug.Log("First Step");
         }
         else if(firstStep.completed)
         {
@@ -61,7 +60,7 @@ public class PartyManager : MonoBehaviour
         PlayRound(firstStep);
         //Display Illustration
         //Check if Controller buttons are pressed
-        //if yes --> firstStep.completed = true;
+        if (Input.GetKeyDown(KeyCode.PageUp) && Input.GetKeyDown(KeyCode.PageDown) && Input.GetKeyDown(KeyCode.B)) firstStep.completed = true;
     }
 
     void ChooseRole()
