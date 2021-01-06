@@ -69,7 +69,51 @@
     <Compile Include="Assets\Standard Assets\ExceptionHelper.cs" />
     <Compile Include="Assets\Standard Assets\INativeWrapper.cs" />
     <Compile Include="Assets\Standard Assets\KinectBuffer.cs" />
+    <Compile Include="Assets\Standard Assets\KinectFaceSpecialCases.cs" />
     <Compile Include="Assets\Standard Assets\KinectSpecialCases.cs" />
+    <Compile Include="Assets\Standard Assets\KinectVisualGestureBuilderSpecialCases.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\CaptureStatusChangedEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\CollectionStatusChangedEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceAlignment.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceAlignmentQuality.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrame.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrameArrivedEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrameFeatures.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrameReader.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrameReference.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrameResult.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceFrameSource.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceModel.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceModelBuilder.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceModelBuilderAttributes.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceModelBuilderCaptureStatus.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceModelBuilderCollectionStatus.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceModelData.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FacePointType.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceProperty.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceShapeAnimations.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\FaceShapeDeformations.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\HighDefinitionFaceFrame.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\HighDefinitionFaceFrameArrivedEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\HighDefinitionFaceFrameReader.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\HighDefinitionFaceFrameReference.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\HighDefinitionFaceFrameSource.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\HighDetailFacePoints.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\KinectFaceUnityAddinUtils.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\RectI.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\Face\TrackingIdLostEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\ContinuousGestureResult.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\DiscreteGestureResult.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\Gesture.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\GestureType.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\KinectVisualGestureBuilderUnityAddinUtils.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\TrackingIdLostEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\VisualGestureBuilderDatabase.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\VisualGestureBuilderFrame.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\VisualGestureBuilderFrameArrivedEventArgs.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\VisualGestureBuilderFrameReader.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\VisualGestureBuilderFrameReference.cs" />
+    <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\VisualGestureBuilderFrameSource.cs" />
     <Compile Include="Assets\Standard Assets\NativeObjectCache.cs" />
     <Compile Include="Assets\Standard Assets\NativeWrapper.cs" />
     <Compile Include="Assets\Standard Assets\SmartGCHandle.cs" />
@@ -148,6 +192,22 @@
     <Compile Include="Assets\Standard Assets\Windows\Kinect\TrackingConfidence.cs" />
     <Compile Include="Assets\Standard Assets\Windows\Kinect\TrackingState.cs" />
     <Compile Include="Assets\Standard Assets\Windows\Kinect\Vector4.cs" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\SkintoneModel\skintone_shape_classifier.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\AAMModel\Map2D3D_HRP.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\EvalModel\right.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\SkintoneModel\skintone_appearance_classifier.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\AAMModel\Map2D3D_F.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\WholeHeadModel\FullHeadMaskVertexCorrespondence.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\MouthModel\MeanShapes.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\MouthModel\close.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\Expression\NuiExpressionModelManifest.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\AAMModel\Map2D3D_HLP.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\MouthModel\lopen.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\ViewModel\right.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\EvalModel\Front.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\EvalModel\left.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\ViewModel\left.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\ViewModel\front.p.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -331,6 +391,7 @@
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.10f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -704,6 +765,14 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/student/Desktop/Projet_VR_SAM/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
 =======
+=======
+    <Reference Include="OpenCvSharp">
+      <HintPath>C:/Users/Martinez/Desktop/Projet_VR_SAM/Assets/KinectScripts/OpenCV/OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>C:/Users/Martinez/Desktop/Projet_VR_SAM/Assets/KinectScripts/SharpZipLib/ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+>>>>>>> Stashed changes
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
     </Reference>
