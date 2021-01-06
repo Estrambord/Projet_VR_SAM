@@ -48,7 +48,6 @@ public class PartyManager : MonoBehaviour
         if (introduction.completed && !firstStep.completed)
         {
             FirstStep();
-            Debug.Log("First Step");
         }
         else if(firstStep.completed)
         {
@@ -61,7 +60,7 @@ public class PartyManager : MonoBehaviour
         PlayRound(firstStep);
         //Display Illustration
         //Check if Controller buttons are pressed
-        //if yes --> firstStep.completed = true;
+        if (Input.GetKeyDown(KeyCode.PageUp) && Input.GetKeyDown(KeyCode.PageDown) && Input.GetKeyDown(KeyCode.B)) firstStep.completed = true;
     }
 
     void ChooseRole()
@@ -109,15 +108,15 @@ public class PartyManager : MonoBehaviour
             SlotPlayer1 = myPlayer;
             player1CheckBox.isOn = true;
         }
-        if (SlotPlayer2 == null)
+        else if (SlotPlayer2 == null)
         {
             SlotPlayer2 = myPlayer;
             player2CheckBox.isOn = true;
         }
-        if (SlotPlayer3 == null)
+        else if (SlotPlayer3 == null)
         {
             SlotPlayer3 = myPlayer;
-            player2CheckBox.isOn = true;
+            player3CheckBox.isOn = true;
         }
     }
 }
