@@ -107,16 +107,19 @@ public class PartyManager : MonoBehaviour
     {
         if (SlotPlayer1 == null) {
             SlotPlayer1 = myPlayer;
+            Debug.Log("1");
             player1CheckBox.isOn = true;
         }
         else if (SlotPlayer2 == null)
         {
             SlotPlayer2 = myPlayer;
+            Debug.Log("2");
             player2CheckBox.isOn = true;
         }
         else if (SlotPlayer3 == null)
         {
             SlotPlayer3 = myPlayer;
+            Debug.Log("3");
             player3CheckBox.isOn = true;
         }
     }
