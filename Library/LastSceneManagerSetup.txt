@@ -1,5 +1,8 @@
 sceneSetups:
 <<<<<<< HEAD
+- path: Assets/Scenes/Antoine le BG.unity
+=======
+<<<<<<< HEAD
 - path: Assets/Scenes/Lucie.unity
 =======
 <<<<<<< Updated upstream
@@ -12,6 +15,7 @@ sceneSetups:
 - path: Assets/KinectView/MainScene.unity
 >>>>>>> Stashed changes
 >>>>>>> main
+>>>>>>> 5230ade6613ad45d0c23b5b25529a227428c23db
   isLoaded: 1
   isActive: 1
   isSubScene: 0
