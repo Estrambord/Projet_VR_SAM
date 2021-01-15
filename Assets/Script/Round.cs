@@ -8,11 +8,8 @@ public class Round : ScriptableObject
     public string instructionText;
     public AudioClip instructionAudio;
     public bool isGame;
-    public bool started = false;
     public float timer;
-    public GameObject firstMur;
-    public GameObject secondMur;
-    public GameObject thirdMur;
+    public bool init = false;
+    public bool started = false;
     public bool completed = false;
-
 }

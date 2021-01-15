@@ -1,0 +1,6 @@
+séparer les phases de gameplay en fonction de qui est pénalisé
+
+analyser le ressenti des joueurs pour l'améliorer meme si ça demande plus de dev
+
+vitesse des murs en fonction de la courbe d'appresnetisage des joueurs
++ en + vite

@@ -7,7 +7,13 @@ public class BodySourceView : MonoBehaviour
 {
     public Material BoneMaterial;
     public GameObject BodySourceManager;
-    
+
+    public PartyManager myManager;
+
+    public GameObject jointPrefab;
+    public GameObject jointPrefabHead;
+    private Color boneColor = new Color(1f, 0.51f, 0f, 1f);
+
     private Dictionary<ulong, GameObject> _Bodies = new Dictionary<ulong, GameObject>();
     private BodySourceManager _BodyManager;
     
@@ -111,16 +117,29 @@ public class BodySourceView : MonoBehaviour
     {
         GameObject body = new GameObject("Body:" + id);
         
+
         for (Kinect.JointType jt = Kinect.JointType.SpineBase; jt <= Kinect.JointType.ThumbRight; jt++)
         {
-            GameObject jointObj = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            GameObject jointObj;
+            //GameObject jointObj = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            if (jt == Kinect.JointType.Head)
+            {
+                jointObj = Instantiate(jointPrefabHead);
+                myManager.AddPlayer(jointObj.GetComponent<Player>());
+            }
+            else
+            {
+                jointObj = Instantiate(jointPrefab);
+            }
             
             LineRenderer lr = jointObj.AddComponent<LineRenderer>();
             lr.SetVertexCount(2);
             lr.material = BoneMaterial;
-            lr.SetWidth(0.05f, 0.05f);
+            lr.SetWidth(0.2f, 0.2f);
+            lr.startColor = boneColor;
+            lr.endColor = boneColor;
             
-            jointObj.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+            //jointObj.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
             jointObj.name = jt.ToString();
             jointObj.transform.parent = body.transform;
         }
@@ -134,6 +153,8 @@ public class BodySourceView : MonoBehaviour
         {
             Kinect.Joint sourceJoint = body.Joints[jt];
             Kinect.Joint? targetJoint = null;
+
+            //Kinect.JointType.
             
             if(_BoneMap.ContainsKey(jt))
             {
@@ -148,7 +169,9 @@ public class BodySourceView : MonoBehaviour
             {
                 lr.SetPosition(0, jointObj.localPosition);
                 lr.SetPosition(1, GetVector3FromJoint(targetJoint.Value));
-                lr.SetColors(GetColorForState (sourceJoint.TrackingState), GetColorForState(targetJoint.Value.TrackingState));
+                //lr.SetColors(GetColorForState (sourceJoint.TrackingState), GetColorForState(targetJoint.Value.TrackingState));
+                lr.startColor = boneColor;
+                lr.endColor = boneColor;
             }
             else
             {
